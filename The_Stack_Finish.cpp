@@ -94,6 +94,18 @@ void Han(Stack *st, int n, int from, int to, int help) {
 		int k = st[from].Pop(); 
 		
 		st[to].Push(k);
+		
+	puts("\nWorking...");
+
+	st[2].Print();
+
+	cout << endl;
+
+	st[0].Print();
+
+	cout << endl;
+
+	st[1].Print();
 
 	}
 
@@ -106,18 +118,6 @@ void Han(Stack *st, int n, int from, int to, int help) {
 		Han(st, n - 1, help, to, from);
 
 	}
-
-	puts("\nWorking...");
-
-	st[2].Print();
-
-	cout << endl;
-
-	st[0].Print();
-
-	cout << endl;
-
-	st[1].Print();
 
 }
 
